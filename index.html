@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,32 @@
 <body>
     <header>
         <h1>Arma el puzzle con AJAX</h1>
-        <h3>Averigua la combinación de botones para que aparezca la imagen completa</h3>
-        <h5>Para limpiar el grid refresca la página</h5>
+        <h3>Averigua el orden de pulsación de los botones para que aparezca la imagen completa</h3>
+        <h5>Para limpiar el grid refresca la página (F5)</h5>
     </header>
     <main>
-        <button id="btn_1" class="button">Botón 1</button>
-        <button id="btn_2" class="button">Botón 2</button>
-        <button id="btn_3" class="button">Botón 3</button>
-        <button id="btn_4" class="button">Botón 4</button>
-        <button id="btn_5" class="button">Botón 5</button>
-        <button id="btn_6" class="button">Botón 6</button>
+        <div id="buttons">
+            <button id="btn_1" class="button">Botón 1</button>
+            <button id="btn_2" class="button">Botón 2</button>
+            <button id="btn_3" class="button">Botón 3</button>
+            <button id="btn_4" class="button">Botón 4</button>
+            <button id="btn_5" class="button">Botón 5</button>
+            <button id="btn_6" class="button">Botón 6</button>
+        </div>
+
+       <div class="container">
+            <div id="div1" class="grid_item"><img src="assets/bobbutton1.jpeg" alt=""></div>
+            <div id="div2" class="grid_item"><img src="assets/bobbutton5.jpeg" alt=""></div>
+            <div id="div3" class="grid_item"><img src="assets/bobbutton2.jpeg" alt=""></div>
+        </div>
+
+        <div class="container">
+            <div id="div4" class="grid_item"><img src="assets/bobbutton6.jpeg" alt=""></div>
+            <div id="div5" class="grid_item"><img src="assets/bobbutton4.jpeg" alt=""></div>
+            <div id="div6" class="grid_item"><img src="assets/bobbutton3.jpeg" alt=""></div> 
+        </div>
+               
+
     </main>
     <script src="script.js"></script>
 </body>
